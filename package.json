@@ -1,0 +1,16 @@
+{
+  "name": "taskmanager-monorepo",
+  "version": "1.0.0",
+  "description": "Unified orchestration for TASK-CO-MAN Railway deployment",
+  "scripts": {
+    "postinstall": "npm run install-all",
+    "install:server": "npm install --prefix server",
+    "install:client": "npm install --prefix client",
+    "install-all": "npm run install:server && npm run install:client",
+    "build:client": "npm run build --prefix client",
+    "build": "npm run build:client",
+    "start": "node server/server.js",
+    "dev": "npm run dev --prefix server",
+    "seed": "npm run seed --prefix server"
+  }
+}
