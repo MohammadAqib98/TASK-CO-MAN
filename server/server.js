@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Welcome Route
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.json({
     message: 'Welcome to the TASK-CO-MAN API!',
     status: 'healthy',
